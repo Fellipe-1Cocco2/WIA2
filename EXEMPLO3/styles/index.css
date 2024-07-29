@@ -1,0 +1,54 @@
+@import url("./variables.css");
+
+/*Inicio Main*/
+.container-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 5%;
+}
+
+.texts-title {
+  font-size: 3rem;
+  color: var(--color3);
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+.texts-subtitle {
+  font-size: 1.4rem;
+  color: var(--color3);
+  text-align: center;
+}
+.main-logo {
+  height: 68.5px;
+  margin: 20px;
+}
+/*Fim Main*/
+
+@media screen and (max-width: 1025px) {
+  /* proporção 1,875 */
+  .navbar-link,
+  .header-login {
+    font-size: 0.55rem;
+  }
+
+  .texts-title {
+    font-size: 1.6rem;
+  }
+  .texts-subtitle {
+    font-size: 0.75rem;
+  }
+  .main-logo {
+    height: 4.55rem;
+  }
+}
+
+@media screen and (max-width: 769px) {
+  /* proporção 2,5 */
+  .main-logo {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 426px) {
+}
