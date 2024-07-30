@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+:root {
+  --font-primary: "Inter", sans-serif;
+  --color1: #000000;
+  --color2: #ffffff;
+  --color3: #54730b;
+  --color4: #323232;
+  --color5: #536652;
+  --color6: #68686b;
+  --color7: #dddfc7;
+  --color8: #f0fce7;
+}
+
+body {
+  display: grid;
+  grid-template-rows: 10vh 80vh 10vh;
+  width: 100%;
+  height: 100%;
+  font-family: var(--font-primary);
+  font-weight: 600;
+  font-size: 1rem;
+  background-image: url(../assets/moldura_esq.png),
+    url(../assets/moldura_dir.png);
+  background-position: right, left;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
