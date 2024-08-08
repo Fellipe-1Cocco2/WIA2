@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WIA - EMPRESAS</title>
+    <script src="../scripts/load_elements_pages.js" defer></script>
+    <script src="../scripts/companies.js" defer></script>
+    <link rel="stylesheet" href="../styles/reset.css" />
+    <link rel="stylesheet" href="../styles/companies.css" />
+    <link rel="stylesheet" href="../styles/footer.css" />
+    <link rel="stylesheet" href="../styles/header.css" />
+  </head>
+  <body>
+    <header class="container-header" id="header"></header>
+    <main class="container-main">
+      <div class="main-inputs">
+        <label class="custom-radio">
+          <input
+            type="radio"
+            name="company"
+            value="company1"
+            onclick="displayInfo()"
+            checked
+          />
+          <span class="title-company">WIA</span>
+        </label>
+        <label class="custom-radio">
+          <input
+            type="radio"
+            name="company"
+            value="company2"
+            onclick="displayInfo()"
+          />
+          <span class="title-company">WAGNER INVESTIMENTOS</span>
+        </label>
+      </div>
+      <div class="company-info" id="companyInfo"></div>
+    </main>
+    <footer class="container-footer" id="footer"></footer>
+  </body>
+</html>

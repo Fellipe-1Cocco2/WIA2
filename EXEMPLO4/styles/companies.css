@@ -1,0 +1,77 @@
+@import url("./variables.css");
+
+.container-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: initial;
+}
+
+.main-inputs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin: 7rem 0;
+}
+
+.custom-radio {
+  display: block;
+  position: relative;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  color: var(--color3);
+}
+
+.title-company {
+  width: 100%;
+  font-size: 1.25rem;
+}
+
+.custom-radio input[type="radio"] {
+  display: none;
+}
+
+.title-company::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  border-radius: 10px;
+  height: 0.2rem;
+  background-color: transparent;
+  bottom: -3px;
+  left: 0;
+  transition: background-color 0.3s ease;
+}
+
+.custom-radio input[type="radio"]:checked + span::after {
+  background-color: var(--color3);
+}
+
+.company-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.company-info p {
+  display: flex;
+  flex-direction: column;
+  color: var(--color3);
+  width: 75%;
+  font-size: 1.25rem;
+}
+.company-info div {
+  display: flex;
+  flex-direction: column;
+  color: var(--color3);
+  width: 75%;
+  font-size: 1.25rem;
+}
+
+.company-info div ul {
+  list-style-type: circle;
+  margin-left: 20px;
+}
